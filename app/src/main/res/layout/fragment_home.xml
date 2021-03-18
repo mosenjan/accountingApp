@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg5"
+        android:padding="30dp">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="0.5"
+            android:paddingVertical="15dp">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="خرید"
+                    android:textSize="25sp"
+                    android:gravity="center|bottom"
+                    android:singleLine="false"
+                    android:paddingBottom="20dp"
+                    android:fontFamily="@font/samim_bold"
+                    android:background="@drawable/iv_background"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_buy" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="فروش"
+                    android:textSize="25sp"
+                    android:gravity="center|bottom"
+                    android:singleLine="false"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/iv_background"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_sale"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="0.5"
+            android:paddingVertical="15dp">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="کالا و خدمات"
+                    android:textSize="25sp"
+                    android:gravity="center|bottom"
+                    android:singleLine="false"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/iv_background"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_stuff"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="اشخاص"
+                    android:textSize="25sp"
+                    android:gravity="center|bottom"
+                    android:singleLine="false"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/iv_background"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_persons"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_weight="0.5"
+            android:paddingVertical="15dp">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="حساب ها"
+                    android:fontFamily="@font/samim_bold"
+                    android:textSize="25sp"
+                    android:gravity="center|bottom"
+                    android:singleLine="false"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/iv_background"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_bank"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="تنظیمات"
+                    android:textSize="25sp"
+                    android:gravity="center|bottom"
+                    android:singleLine="false"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/iv_background"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_setting"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </TableRow>
+
+    </TableLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_exit"
+        android:icon="@drawable/ic_exit"
+        android:title="خروج" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_support"
+        android:title="پشتیبانی" />
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="میزکار" />
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/ic_setting"
+        android:title="تنظیمات" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_persons"
+        android:title="پروفایل" />
+
+</menu>
