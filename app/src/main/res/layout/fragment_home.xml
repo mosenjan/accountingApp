@@ -1,174 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/bg5"
     tools:context=".HomeFragment">
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@mipmap/bg5"
-        android:padding="30dp">
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:weightSum="1"
-            android:layout_weight="0.5"
-            android:paddingVertical="15dp">
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
 
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="خرید"
-                    android:textSize="25sp"
-                    android:gravity="center|bottom"
-                    android:singleLine="false"
-                    android:paddingBottom="20dp"
-                    android:fontFamily="@font/samim_bold"
-                    android:background="@drawable/iv_background"
-                    android:layout_margin="10dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="25dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:text="خرید"
+        android:textColor="@color/purple_500"
+        app:icon="@drawable/ic_buy"
+        app:iconGravity="textTop"
+        app:iconSize="50dp"
+        app:iconTint="@color/purple_500"
+        app:layout_constraintEnd_toStartOf="@id/materialButton3"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/ic_buy" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="25dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:text="فروش"
+        android:textColor="@color/purple_500"
+        app:icon="@drawable/ic_sale"
+        app:iconGravity="textTop"
+        app:iconSize="50dp"
+        app:iconTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/materialButton4"
+        app:layout_constraintTop_toTopOf="parent" />
 
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="فروش"
-                    android:textSize="25sp"
-                    android:gravity="center|bottom"
-                    android:singleLine="false"
-                    android:paddingBottom="20dp"
-                    android:background="@drawable/iv_background"
-                    android:layout_margin="10dp"/>
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ic_sale"
-                    android:layout_centerInParent="true"/>
-            </RelativeLayout>
-        </TableRow>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="25dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/white"
+        android:text="کالاوخدمات"
+        android:textColor="@color/purple_500"
+        app:icon="@drawable/ic_stuff"
+        app:iconGravity="textTop"
+        app:iconSize="50dp"
+        app:iconTint="@color/purple_500"
+        app:layout_constraintEnd_toStartOf="@+id/materialButton6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton4" />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:weightSum="1"
-            android:layout_weight="0.5"
-            android:paddingVertical="15dp">
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="25dp"
+        android:layout_marginTop="94dp"
+        android:backgroundTint="@color/white"
+        android:text="تنظیمات"
+        android:textColor="@color/purple_500"
+        app:icon="@drawable/ic_setting"
+        app:iconGravity="textTop"
+        app:iconSize="50dp"
+        app:iconTint="@color/purple_500"
+        app:layout_constraintEnd_toStartOf="@+id/materialButton2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton5" />
 
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="کالا و خدمات"
-                    android:textSize="25sp"
-                    android:gravity="center|bottom"
-                    android:singleLine="false"
-                    android:paddingBottom="20dp"
-                    android:background="@drawable/iv_background"
-                    android:layout_margin="10dp"/>
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ic_stuff"
-                    android:layout_centerInParent="true"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="25dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:text="اشخاص"
+        android:textColor="@color/purple_500"
+        app:icon="@drawable/ic_persons"
+        app:iconGravity="textTop"
+        app:iconSize="50dp"
+        app:iconTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/materialButton5"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton3" />
 
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="اشخاص"
-                    android:textSize="25sp"
-                    android:gravity="center|bottom"
-                    android:singleLine="false"
-                    android:paddingBottom="20dp"
-                    android:background="@drawable/iv_background"
-                    android:layout_margin="10dp"/>
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ic_persons"
-                    android:layout_centerInParent="true"/>
-            </RelativeLayout>
-        </TableRow>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="25dp"
+        android:backgroundTint="@color/white"
+        android:text="حسابداری"
+        android:textColor="@color/purple_500"
+        app:icon="@drawable/ic_bank"
+        app:iconGravity="textTop"
+        app:iconSize="50dp"
+        app:iconTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/materialButton1"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton6" />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:weightSum="1"
-            android:layout_weight="0.5"
-            android:paddingVertical="15dp">
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="حساب ها"
-                    android:fontFamily="@font/samim_bold"
-                    android:textSize="25sp"
-                    android:gravity="center|bottom"
-                    android:singleLine="false"
-                    android:paddingBottom="20dp"
-                    android:background="@drawable/iv_background"
-                    android:layout_margin="10dp"/>
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ic_bank"
-                    android:layout_centerInParent="true"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="تنظیمات"
-                    android:textSize="25sp"
-                    android:gravity="center|bottom"
-                    android:singleLine="false"
-                    android:paddingBottom="20dp"
-                    android:background="@drawable/iv_background"
-                    android:layout_margin="10dp"/>
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ic_setting"
-                    android:layout_centerInParent="true"/>
-            </RelativeLayout>
-        </TableRow>
-
-    </TableLayout>
-
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
