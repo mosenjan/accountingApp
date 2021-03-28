@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="button_height_size">65dp</dimen>
+    <dimen name="card_view_radius">5dp</dimen>
+    <dimen name="card_view_elevation">0dp</dimen>
+    <dimen name="item_article_height">140dp</dimen>
+
+
+    <dimen name="margin_padding_size_small">8dp</dimen>
+    <dimen name="margin_padding_size_medium">16dp</dimen>
+    <dimen name="margin_padding_size_large">24dp</dimen>
+    <dimen name="margin_padding_size_xlarge">32dp</dimen>
+    <dimen name="margin_padding_size_xxlarge">40dp</dimen>
+
+
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_xlarge">34sp</dimen>
+    <dimen name="text_size_xxlarge">48sp</dimen>
+    <dimen name="text_size_xxxlarge">60sp</dimen>
+    <dimen name="card_view_comment_min_height">100dp</dimen>
+    <dimen name="line_spacing">5dp</dimen>
+    <dimen name="inset_toolbar">0dp</dimen>
+    <dimen name="toolbar_icon_size">42dp</dimen>
+    <dimen name="min_height_write_article_body">300dp</dimen>
+    <dimen name="chip_spacing">4dp</dimen>
+    <dimen name="min_height_add_comment_edit_text">120dp</dimen>
+    <dimen name="register_logo_width">160dp</dimen>
+</resources>

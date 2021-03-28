@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--for name of each user in article-->
+    <style name="listItemName">
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:lineSpacingExtra">4.7sp</item>
+        <item name="android:textColor">@color/black3</item>
+    </style>
+
+    <!--for when create post in article-->
+    <style name="listItemCreationDay">
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="android:textColor">@color/black3</item>
+    </style>
+
+    <!--body of Items in listView-->
+    <style name="listItemBody">
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="android:lineSpacingExtra">6.7sp</item>
+        <item name="android:textColor">@color/black3</item>
+    </style>
+
+</resources>
