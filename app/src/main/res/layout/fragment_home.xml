@@ -31,7 +31,7 @@
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton4"
+        android:id="@+id/btnBuy"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_margin="25dp"
@@ -42,13 +42,13 @@
         app:iconGravity="textTop"
         app:iconSize="50dp"
         app:iconTint="@color/purple_500"
-        app:layout_constraintEnd_toStartOf="@id/materialButton3"
+        app:layout_constraintEnd_toStartOf="@id/btnShop"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton3"
+        android:id="@+id/btnShop"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_margin="25dp"
@@ -60,11 +60,11 @@
         app:iconSize="50dp"
         app:iconTint="@color/purple_500"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/materialButton4"
+        app:layout_constraintStart_toEndOf="@id/btnBuy"
         app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton5"
+        android:id="@+id/btnStuff"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_margin="25dp"
@@ -76,14 +76,14 @@
         app:iconGravity="textTop"
         app:iconSize="50dp"
         app:iconTint="@color/purple_500"
-        app:layout_constraintEnd_toStartOf="@+id/materialButton6"
+        app:layout_constraintEnd_toStartOf="@+id/btnPerson"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton4" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBuy" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton1"
+        android:id="@+id/btnSetting"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_margin="25dp"
@@ -95,13 +95,13 @@
         app:iconGravity="textTop"
         app:iconSize="50dp"
         app:iconTint="@color/purple_500"
-        app:layout_constraintEnd_toStartOf="@+id/materialButton2"
+        app:layout_constraintEnd_toStartOf="@+id/btnBank"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton5" />
+        app:layout_constraintTop_toBottomOf="@+id/btnStuff" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton6"
+        android:id="@+id/btnPerson"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_margin="25dp"
@@ -115,11 +115,11 @@
         app:iconTint="@color/purple_500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/materialButton5"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton3" />
+        app:layout_constraintStart_toEndOf="@+id/btnStuff"
+        app:layout_constraintTop_toBottomOf="@+id/btnShop" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton2"
+        android:id="@+id/btnBank"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_margin="25dp"
@@ -131,7 +131,7 @@
         app:iconSize="50dp"
         app:iconTint="@color/purple_500"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/materialButton1"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton6" />
+        app:layout_constraintStart_toEndOf="@id/btnSetting"
+        app:layout_constraintTop_toBottomOf="@+id/btnPerson" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

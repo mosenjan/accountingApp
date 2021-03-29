@@ -11,30 +11,48 @@ import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-       // onClick()
+/*
 
+
+
+
+ */
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
-    companion object {
-        fun newInstance(): HomeFragment = HomeFragment()
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        onClick()
+
     }
 
-    fun onClick(){
-    /*    materialButton3.setOnClickListener{
-           // findNavController().navigate(HomeFragmentDirection.actionHomepageFragmentToWriteArticleFragment())
-        }*/
+
+    private fun onClick(){
+
+        btnShop.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToSaleFragment())
+        })
+
+        btnPerson.setOnClickListener {
+            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToPersonFragment())
+        }
+
+        btnBuy.setOnClickListener {
+            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToInvoiceFragment())
+        }
+
+
     }
+
 }
