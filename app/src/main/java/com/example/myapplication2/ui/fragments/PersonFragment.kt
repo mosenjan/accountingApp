@@ -1,14 +1,17 @@
-package com.example.myapplication2.ui
+package com.example.myapplication2.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.myapplication2.R
 import com.example.myapplication2.data.Person
 import com.example.myapplication2.ui.adapter.PersonAdapter
+import kotlinx.android.synthetic.main.fragment_invoice.*
 import kotlinx.android.synthetic.main.fragment_person.*
+import kotlinx.android.synthetic.main.fragment_person.iv_back
 
 class PersonFragment : Fragment() {
 
@@ -34,14 +37,18 @@ class PersonFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
-
-
-
         recyclerViewPerson.adapter = data()?.let { it ->
             PersonAdapter(it)
          }
+
+        onClick()
+
+    }
+
+    fun onClick(){
+        iv_back.setOnClickListener {
+            findNavController().navigate(PersonFragmentDirections.actionPersonFragmentToHomeFragment())
+        }
     }
 
     fun data():ArrayList<Person>{

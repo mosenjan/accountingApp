@@ -1,4 +1,4 @@
-package com.example.myapplication2
+package com.example.myapplication2.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.myapplication2.R
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
@@ -50,6 +51,15 @@ class HomeFragment : Fragment() {
 
         btnBuy.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToInvoiceFragment())
+        }
+
+        btnSetting.setOnClickListener {
+            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToInvoiceFragment())
+        }
+
+        ivAccount.setOnClickListener {
+            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToProfileFragment())
+
         }
 
 

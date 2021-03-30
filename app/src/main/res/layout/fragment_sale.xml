@@ -4,31 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black2"
-    tools:context=".SaleFragment">
+    android:background="@color/black7"
+    tools:context=".ui.fragments.SaleFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/my_toolbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#5DEF21"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginHorizontal="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="لیست اشخاص"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
-        android:background="@color/black3"
+        android:background="@color/white"
         android:gravity="right"
         android:hint="کد کالا"
         android:inputType="number"
         android:padding="10dp"
-        android:textColorHint="@color/black5"
         android:textColor="@color/white"
+        android:textColorHint="@color/black5"
         app:layout_constraintLeft_toRightOf="@id/guideline1"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
-        android:background="@color/black3"
+        android:background="@color/white"
         android:gravity="right"
         android:hint="نام کالا"
         android:padding="10dp"
@@ -43,7 +79,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
-        android:background="@color/black3"
+        android:background="@color/white"
         android:gravity="right"
         android:hint="مقدار جز"
         android:inputType="number"
@@ -60,7 +96,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
-        android:background="@color/black3"
+        android:background="@color/white"
         android:gravity="right"
         android:hint="واحد جز"
         android:padding="10dp"
@@ -76,7 +112,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
-        android:background="@color/black3"
+        android:background="@color/white"
         android:gravity="right"
         android:hint="واحد کل"
         android:fontFamily="serif"
@@ -94,7 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
         android:layout_marginLeft="24dp"
-        android:background="@color/black3"
+        android:background="@color/white"
         android:gravity="right"
         android:hint="مقدار کل"
         android:inputType="number"
@@ -111,14 +147,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
-        android:background="@color/black3"
+        android:background="@color/white"
         android:gravity="right"
         android:hint="مبلغ فی"
         android:inputType="number"
         android:padding="10dp"
-        android:textColorHint="@color/black5"
+        android:drawableRight="@drawable/ic_persons"
         android:textColor="@color/white"
-        app:layout_constraintHorizontal_bias="0.68"
+        android:textColorHint="@color/black5"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText5" />
@@ -131,6 +168,7 @@
         android:id="@+id/btnSave"
         android:text="ذخیره"
         android:layout_margin="25dp"
+        android:backgroundTint="#5DEF21"
         app:layout_constraintTop_toBottomOf="@id/editText7" />
 
     <androidx.constraintlayout.widget.Guideline

@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/bg3"
-    tools:context=".HomeFragment">
+    tools:context=".ui.fragments.HomeFragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/my_toolbar"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:background="@color/blue1"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,15 +20,29 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         android:gravity="center">
 
+        <ImageView
+            android:id="@+id/ivAccount"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/ic_persons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="میزکار"
             android:textColor="@color/white"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnBuy"
@@ -37,11 +51,11 @@
         android:layout_margin="25dp"
         android:backgroundTint="@color/white"
         android:text="خرید"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/black2"
         app:icon="@drawable/ic_buy"
         app:iconGravity="textTop"
         app:iconSize="50dp"
-        app:iconTint="@color/purple_500"
+        app:iconTint="#FF1414"
         app:layout_constraintEnd_toStartOf="@id/btnShop"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,11 +68,11 @@
         android:layout_margin="25dp"
         android:backgroundTint="@color/white"
         android:text="فروش"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/black2"
         app:icon="@drawable/ic_sale"
         app:iconGravity="textTop"
         app:iconSize="50dp"
-        app:iconTint="@color/purple_500"
+        app:iconTint="#5DEF21"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnBuy"
         app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
@@ -71,11 +85,11 @@
         android:layout_marginTop="48dp"
         android:backgroundTint="@color/white"
         android:text="کالاوخدمات"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/black2"
         app:icon="@drawable/ic_stuff"
         app:iconGravity="textTop"
         app:iconSize="50dp"
-        app:iconTint="@color/purple_500"
+        app:iconTint="@color/blue1"
         app:layout_constraintEnd_toStartOf="@+id/btnPerson"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -90,11 +104,11 @@
         android:layout_marginTop="94dp"
         android:backgroundTint="@color/white"
         android:text="تنظیمات"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/black2"
         app:icon="@drawable/ic_setting"
         app:iconGravity="textTop"
         app:iconSize="50dp"
-        app:iconTint="@color/purple_500"
+        app:iconTint="@color/teal_200"
         app:layout_constraintEnd_toStartOf="@+id/btnBank"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +122,7 @@
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/white"
         android:text="اشخاص"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/black2"
         app:icon="@drawable/ic_persons"
         app:iconGravity="textTop"
         app:iconSize="50dp"
@@ -125,11 +139,11 @@
         android:layout_margin="25dp"
         android:backgroundTint="@color/white"
         android:text="حسابداری"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/black2"
         app:icon="@drawable/ic_bank"
         app:iconGravity="textTop"
         app:iconSize="50dp"
-        app:iconTint="@color/purple_500"
+        app:iconTint="#F3E03C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnSetting"
         app:layout_constraintTop_toBottomOf="@+id/btnPerson" />

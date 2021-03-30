@@ -1,25 +1,15 @@
-package com.example.myapplication2
+package com.example.myapplication2.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.example.myapplication2.R
+import kotlinx.android.synthetic.main.fragment_invoice.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [SaleFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class SaleFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +28,19 @@ class SaleFragment : Fragment() {
 
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_sale, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+        onClick()
+    }
+
+    fun onClick(){
+        iv_back.setOnClickListener {
+            findNavController().navigate(SaleFragmentDirections.actionSaleFragmentToHomeFragment())
+        }
     }
 
 }

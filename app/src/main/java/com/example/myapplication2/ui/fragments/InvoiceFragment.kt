@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.myapplication2.R
 import com.example.myapplication2.data.Invoice
 import com.example.myapplication2.ui.adapter.InvoiceAdapter
@@ -30,13 +31,20 @@ class InvoiceFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         recyclerViewInvoice.adapter = data()?.let {
             InvoiceAdapter(it)
         }
 
-        super.onViewCreated(view, savedInstanceState)
+        onClick()
+
     }
 
+    fun onClick(){
+        iv_back.setOnClickListener {
+            findNavController().navigate(InvoiceFragmentDirections.actionInvoiceFragmentToHomeFragment())
+        }
+    }
 
     fun data():ArrayList<Invoice>{
         var data: ArrayList<Invoice> = ArrayList()

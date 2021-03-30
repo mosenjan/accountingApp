@@ -14,17 +14,27 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/item_article_height">
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_profile"
+            android:layout_margin="10dp"
+            app:civ_border_color="@color/black3"
+            app:civ_border_width="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/txtPersonName"
             style="@style/listItemName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
             android:fontFamily="@font/samim_bold"
             android:text="محسن عسگرزاده طرقبه"
+            android:layout_margin="10dp"
             app:layout_constraintBottom_toTopOf="@+id/txtInvoiceDetails"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profile_image"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="spread" />
 
