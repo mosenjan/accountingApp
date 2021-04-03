@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragments.LoginFragment"
+    >
+
+    <!--logo-->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_90ssp"
+        android:layout_height="@dimen/_90ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin_padding_size_xlarge"
+        app:srcCompat="@mipmap/ic_itpardaz"
+        app:tint="@color/purple_700" />
+
+    <!--login text-->
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/samim_bold"
+        android:text="خوش آمدید"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_padding_size_medium"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <!--login description-->
+    <TextView
+        android:id="@+id/login_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/black4"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_text" />
+
+
+    <!--username text field-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium"
+        android:layout_marginEnd="@dimen/margin_padding_size_medium"
+        android:hint="نام کاربری"
+        android:textAlignment="textStart"
+        app:errorEnabled="true"
+        android:layout_marginTop="@dimen/margin_padding_size_xxlarge"
+        app:layout_constraintTop_toBottomOf="@+id/login_desc"
+        app:endIconDrawable="@drawable/ic_persons">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textAlignment="textStart"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--password text field-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium"
+        android:layout_marginTop="@dimen/margin_padding_size_small"
+        android:layout_marginEnd="@dimen/margin_padding_size_medium"
+        android:hint="کلمه عبور"
+        android:textAlignment="textStart"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTextField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textAlignment="textStart" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--login button-->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_size"
+        android:text="ورود"
+        android:layout_margin="@dimen/_15ssp"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextField" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

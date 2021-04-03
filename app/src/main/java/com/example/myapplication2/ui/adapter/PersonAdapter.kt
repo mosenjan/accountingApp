@@ -5,9 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication2.R
 import com.example.myapplication2.data.Person
+import com.example.myapplication2.ui.fragments.PersonFragmentDirections
 
 
 class PersonAdapter(private val personList: List<Person>) :
@@ -31,14 +33,12 @@ class PersonAdapter(private val personList: List<Person>) :
         holder.txtStatus.text = personList[position].status
 
 
-  /*      holder.txtProfileName.setOnClickListener { v ->
-            personList[position].author?.username?.let {
-                v.findNavController()
-                    .navigate(HomeFragmentDirections.actionHomepageFragmentToProfileFragment(
-                        username = it))
-            }
+        holder.txtProfileName.setOnClickListener { v ->
+                personList[position].id.let {
+                    v.findNavController().navigate(PersonFragmentDirections.actionPersonFragmentToProfileFragment())
+                }
         }
-        holder.txtBody.setOnClickListener { v ->
+  /*      holder.txtBody.setOnClickListener { v ->
             personList[position].slug?.let {
                 v.findNavController().navigate(
                     HomeFragmentDirections.actionHomepageFragmentToArticleDetailsFragment(slug = it))

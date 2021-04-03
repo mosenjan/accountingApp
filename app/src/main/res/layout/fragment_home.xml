@@ -44,6 +44,17 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_90ssp"
+        android:layout_height="@dimen/_90ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        app:srcCompat="@mipmap/ic_itpardaz"
+        app:tint="@color/purple_700"
+        android:layout_marginTop="@dimen/_10ssp"/>
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnBuy"
         android:layout_width="150dp"
@@ -59,7 +70,7 @@
         app:layout_constraintEnd_toStartOf="@id/btnShop"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnShop"
@@ -75,7 +86,7 @@
         app:iconTint="#5DEF21"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnBuy"
-        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnStuff"
@@ -101,7 +112,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_margin="25dp"
-        android:layout_marginTop="94dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/white"
         android:text="تنظیمات"
         android:textColor="@color/black2"

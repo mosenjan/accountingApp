@@ -120,7 +120,7 @@
         android:layout_margin="15dp"
         android:text="تلفن"
         android:textColor="@color/purple_500"
-        android:textSize="25sp"
+        android:textSize="@dimen/_20ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seprator1" />
 

@@ -54,13 +54,16 @@ class HomeFragment : Fragment() {
         }
 
         btnSetting.setOnClickListener {
-            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToInvoiceFragment())
+           // findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToInvoiceFragment())
+            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToSettingFragment())
         }
 
         ivAccount.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToProfileFragment())
 
         }
+
+
 
 
     }
